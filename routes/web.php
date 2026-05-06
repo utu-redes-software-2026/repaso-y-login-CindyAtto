@@ -17,7 +17,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 Route::middleware(['auth'])->get('/panel', function () {
-    return view('panel');
+    return view('panel');//----esta ruta se creo para mostrar la vista panel.blade.php al ingresar a la ruta /panel, esta ruta solo es accesible para usuarios autenticados gracias al middleware auth, que se encarga de verificar si el usuario esta autenticado antes de permitirle acceder a la ruta /panel--
 });
 
 require __DIR__.'/auth.php';
