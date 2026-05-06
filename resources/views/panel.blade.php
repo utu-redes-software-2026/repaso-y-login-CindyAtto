@@ -1,2 +1,2 @@
 <h1>Bienvenido al panel privado</h1>
-<p>Solo usuarios autenticados pueden ver esto.</p>
+<p>Solo usuarios autenticados pueden ver esto.</p>///---en este archivo blade se muestra un mensaje de bienvenida al usuario autenticado, y se le informa que solo los usuarios autenticados pueden ver esta pagina, esta vista se muestra al ingresar a la ruta /panel, que solo es accesible para usuarios autenticados gracias al middleware auth, que se encarga de verificar si el usuario esta autenticado antes de permitirle acceder a la ruta /panel--
